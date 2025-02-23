@@ -39,7 +39,7 @@ const { items } = storeToRefs(orderStore); // Get the items from the store
 const menuItems = ref([]);
 
 onBeforeMount(async () => {
-  const response = await $fetch('/api/menu');
+  const response = await $fetch('/menu.json');
   menuItems.value = response;
 });
 
